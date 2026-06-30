@@ -40,7 +40,7 @@ export default defineConfig({
       "/Notes/": getSidebar("/docs/src", "/Notes/"),
     },
     // 文章内导航栏标题
-    outlineTitle: "导航栏",
+    outlineTitle: "Table of Content",
     // 是否启动搜索功能
     search: {
       provider: "local",
