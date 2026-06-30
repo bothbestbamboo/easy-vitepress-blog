@@ -5,7 +5,7 @@
       <h1
         class="pb-2 text-3xl font-bold transition-all duration-300 border-b-4 border-sky-500 dark:border-sky-700 w-fit hover:pr-6"
       >
-        🏷️ 文章分类
+        🏷️ Categories
       </h1>
       <div class="mt-4">
         <div

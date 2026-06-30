@@ -7,7 +7,7 @@ export default defineConfig({
   title: "Bothbest Bamboo Blog",
   titleTemplate: "Blog",
   // 在标签上显示所的 logo
-  head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "https://img.bambooflooring.net/file/1782802571919.png" }]],
 
   // 网站描述，有利于被搜索引擎捕获
   description:
