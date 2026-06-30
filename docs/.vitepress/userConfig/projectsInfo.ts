@@ -12,49 +12,66 @@ interface Project {
  */
 export const projectsInfo: Project[] = [
   {
-    banner: "/project-img/gpt-feishu.png",
-    title: "Feishu&ChatGPT",
-    description:
-      "将 chatGPT 接入飞书对话机器人，支持上下文对话与人格预设，并使用aircode一键部署",
-    link: "https://github.com/ZbWeR/feishu-chatGPT-plus",
-    tag: "JavaScript",
+    banner: "https://img.bambooflooring.net/file/1782690564056.webp",
+    title: "Horizontal Natural Bamboo Flooring",
+    tag: "Bamboo",
+    description: "Features wide, traditional bamboo nodes and a bright, natural grain pattern. Delivering classic eco-elegant aesthetics and robust wear resistance for contemporary spaces.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/solid-horizontal-natural.html" // 可根据实际产品详情页修改链接
   },
   {
-    banner: "/project-img/cloudMusic.png",
-    title: "CloudMusic",
-    description: "对移动端网易云音乐的模仿与复现，实现了虚拟列表与无限滚动...",
-    link: "https://github.com/ZbWeR/NeteaseCloudMusic",
-    tag: "Vue",
+    banner: "https://img.bambooflooring.net/file/1782690567201.webp",
+    title: "Vertical Carbonized Bamboo Flooring",
+    tag: "Bamboo",
+    description: "Showcases sleek, narrow linear stripes paired with a rich, dark caramel tone achieved through advanced thermal carbonization for enhanced dimensional stability.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/solid-vertical-carbonized.html"
   },
   {
-    banner: "/project-img/analyze-tool.png",
-    title: "Npm Analyze-tool",
-    description:
-      "一款用于可视化分析项目依赖关系的命令行工（第六届字节跳动前端青训大项目三等奖）",
-    link: "https://github.com/jonlyes/packageResolution",
-    tag: "TypeScript",
+    banner: "https://img.bambooflooring.net/file/1782690563502.webp",
+    title: "Vertical Natural Bamboo Flooring",
+    tag: "Bamboo",
+    description: "Combines a clean, modern linear aesthetic with the bright, organic look of untreated Moso bamboo. Perfect for creating spacious, minimalist interior designs.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/solid-vertical-natural.html"
   },
   {
-    banner: "/project-img/dora-bot.png",
-    title: "Dora-bot",
-    description:
-      "基于 go-cqhttp 框架开发的QQ聊天机器人，接入 mongodb 存储消息记录以实现虚假的学习功能.",
-    link: "https://github.com/ZbWeR/qqbot-Dora",
-    tag: "Python",
+    banner: "https://img.bambooflooring.net/file/1782610867792.webp",
+    title: "Horizontal Carbonized Bamboo Flooring",
+    tag: "Bamboo",
+    description: "Highlights prominent organic bamboo knuckles beautifully deepened by a thermal steaming process, offering an upscale, warm hardwood-alternative look.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/solid-horizontal-carbonized.html"
   },
   {
-    banner: "/project-img/ruleMining.png",
-    title: "Rule Mining",
-    description:
-      "采用 Apriori / Fpgrowth / Eclat 算法对超市商品数据集进行关联规则的挖掘.",
-    link: "https://github.com/ZbWeR/Association-rule-mining",
-    tag: "Python",
+    banner: "https://img.bambooflooring.net/file/1782610857962.webp",
+    title: "Strand Woven Bamboo Flooring Tigerwood",
+    tag: "Bamboo",
+    description: "Engineered from compressed high-density bamboo fibers to deliver exceptional Janka hardness. Retains a crisp, bright natural blonde wood tone ideal for high-traffic zones.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/strandwoven-tiger.html"
   },
   {
-    banner: "/project-img/dinosaur.png",
-    title: "Dinosaur-Game",
-    description: "基于 EasyX 开发的一款游戏内容更加丰富的谷歌断网小恐龙游戏.",
-    link: "https://github.com/ZbWeR/Dinosaur-Game",
-    tag: "C++",
+    banner: "https://img.bambooflooring.net/file/1782610862937.webp",
+    title: "Strand Woven Bamboo Flooring Caramel",
+    tag: "Bamboo",
+    description: "An ultra-durable, premium strand-woven paneling option with a striking black finish. Blends heavy-duty commercial structural strength with a bold, luxury modern aesthetic.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/strandwoven-caramel.html"
   },
+   {
+    banner: "https://img.bambooflooring.net/file/1782610867792.webp",
+    title: "Strand Woven Bamboo Flooring Natural",
+    tag: "Bamboo",
+    description: "Highlights prominent organic bamboo knuckles beautifully deepened by a thermal steaming process, offering an upscale, warm hardwood-alternative look.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/strandwoven-natural.html"
+  },
+  {
+    banner: "https://img.bambooflooring.net/file/1782610861851.webp",
+    title: "Strand Woven Bamboo Flooring Rosewood",
+    tag: "Bamboo",
+    description: "Engineered from compressed high-density bamboo fibers to deliver exceptional Janka hardness. Retains a crisp, bright natural blonde wood tone ideal for high-traffic zones.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/distressed-bamboo-flooring.html"
+  },
+  {
+    banner: "https://img.bambooflooring.net/file/1782610861851.webp",
+    title: "Strand Woven Bamboo Flooring Handscraped",
+    tag: "Bamboo",
+    description: "An ultra-durable, premium strand-woven paneling option with a striking black finish. Blends heavy-duty commercial structural strength with a bold, luxury modern aesthetic.",
+    link: "https://www.bambooindustry.com/bamboo-flooring/hand-scraped.html"
+  }
 ];

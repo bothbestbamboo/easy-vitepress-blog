@@ -4,8 +4,8 @@
   >
     <p class="text-sm font-medium">{{ footer.copyright }}</p>
     <p class="text-sm font-medium">
-      Theme |
-      <a href="https://github.com/ZbWeR/easy-vitepress-blog">easy-vitepress-blog</a>
+      bamboo supplier |
+      <a href="#">bamboo flooring factory since 2001</a>
     </p>
   </footer>
 </template>

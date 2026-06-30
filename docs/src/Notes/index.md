@@ -3,17 +3,17 @@ layout: page
 sidebar: false
 
 hero:
-  title: "Document"
-  subTitle: "📚 欢迎来到本项目的使用说明书"
+  title: "Blog"
+  subTitle: "📚 to find all news about bamboo"
 
 types:
-  - name: "使用指南"
-    desc: "How to Use"
-    link: "/Notes/0tutorial/quickstart"
+  - name: "Bamboo Flooring"
+    desc: "solid & strand"
+    link: "#"
     icon: "✨"
-  - name: "面经分享"
-    desc: "interview experiences"
-    link: "/Notes/Interviews/"
+  - name: "Bamboo Plywood"
+    desc: "various dimensions"
+    link: "#"
     icon: "🏃"
 # flow: true
 ---
