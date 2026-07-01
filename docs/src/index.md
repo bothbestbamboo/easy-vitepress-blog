@@ -30,7 +30,7 @@ features:
     title: Bamboo Veneer
     details: Ultra-thin, flexible natural bamboo veneer sheets. Perfect for high-end surface laminating, wall paneling, and eco-conscious architectural wrapping.
 
-  # ------ 第二排：4个工厂优势（完美对齐） ------
+  # ------ 第二排：4个工厂优势 ------
   - icon: 🏭
     title: Factory-Direct Supply
     details: Operating over 2 decades of specialized bamboo manufacturing. We guarantee consistent bulk supply capacity, strict quality control, and competitive pricing.
@@ -44,7 +44,6 @@ features:
     title: Global Export Experience
     details: Efficient worldwide logistics and customs handling. Successfully exported container-loads of top-tier bamboo flooring and plywood to over 30 countries.
 ---
-<!-- 直接贴在 index.md 文件的最底部，代替之前的复杂代码 -->
 
 ## 🏛️ Why Choose Bothbest Bamboo?
 
