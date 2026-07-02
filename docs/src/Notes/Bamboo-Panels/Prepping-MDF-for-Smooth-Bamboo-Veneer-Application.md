@@ -6,7 +6,7 @@ tags: "Bamboo"
 updateTime: "2026-7-2 07:38"
 ---
 
-
+# Avoiding "The Telegraph Effect": Prepping MDF for Smooth Bamboo Veneer Application
 !['bamboo veneer'](https://img.bambooflooring.net/file/1782893334407.jpg)
 
 Achieving a flawless, glass-like finish on cabinetry and furniture is the hallmark of a skilled woodworker. When working with ultra-smooth substrates like Medium-Density Fiberboard (MDF) and premium surfacing materials, the expectations for perfection are incredibly high. However, working with alternative materials introduces unique challenges that require specific preparation techniques.
