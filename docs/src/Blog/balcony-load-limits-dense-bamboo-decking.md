@@ -3,7 +3,7 @@ title: "Balcony Load Limits for Dense Bamboo Decking: The Weight Factor Explaine
 outline: deep
 desc: "Dense bamboo decking looks right on a balcony but weighs more than most people expect. This piece explains how load limits work, where strand-woven bamboo lands on the scale, and what steps keep a deck within the structure's safe capacity."
 tags: "Bamboo"
-updateTime: "2026-10-12 09:38"
+updateTime: "2026-10-13 06:20"
 ---
 
 # Balcony Load Limits for Dense Bamboo Decking: The Weight Factor Explained
