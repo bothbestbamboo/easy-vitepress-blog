@@ -12,7 +12,7 @@ hero:
       text: About
       link: /AboutMe.html
     - theme: alt
-      text: Blogs
+      text: Blog
       link: /Blog/
 
 features:

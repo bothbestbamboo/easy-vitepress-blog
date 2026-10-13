@@ -25,7 +25,7 @@ export default defineConfig({
     nav: [
       { text: "🏠 Home", link: "index.md" },
       { text: "🌐 About", link: "/AboutMe.md" },
-      { text: "💭 Blogs", link: "/Blog/index" },
+      { text: "💭 Blog", link: "/Blog/index" },
       { text: "💎 Products", link: "Projects.md" },
     
     ],
