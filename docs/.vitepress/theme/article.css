@@ -22,20 +22,10 @@
     linear-gradient(1turn, rgba(60, 10, 30, 0.04) 3%, transparent 0);
 }
 
-/* 标题 */
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3,
-.vp-doc h4,
-.vp-doc h5,
-.vp-doc h6 {
+/* 右侧正文大标题 (h1)：强制自动换行，取消单行截断和省略号 */
+.vp-doc h1 {
   color: var(--dora-text-indigo);
   letter-spacing: 0.1em;
-  @apply line-clamp-1;
-}
-
-/* 覆盖 h1：允许长标题自动换行，取消单行截断 */
-.vp-doc h1 {
   padding-bottom: 0.5rem;
   border-bottom: 4px solid var(--dora-border-indigo);
   width: fit-content;
@@ -43,18 +33,31 @@
   word-break: break-word !important;
   overflow-wrap: break-word !important;
   line-height: 1.3em !important;
-  @apply transition-all duration-300;
+  display: block !important;
+  text-overflow: unset !important;
+  overflow: visible !important;
+  transition: all 0.3s;
 }
 .vp-doc h1:hover {
   padding-right: 1.75rem;
 }
 
 .vp-doc h2 {
+  color: var(--dora-text-indigo);
+  letter-spacing: 0.1em;
   margin-top: 10px;
   border-bottom: 3px solid var(--dora-border-indigo);
   width: fit-content;
   padding-bottom: 4px;
   border-top: 0px solid var(--dora-border-indigo);
+}
+
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  color: var(--dora-text-indigo);
+  letter-spacing: 0.1em;
 }
 
 /* 引用 */
@@ -131,7 +134,17 @@
   min-width: 120px;
 }
 
-/* 侧边导航 */
+/* 侧边导航字体调小、行高优化，节省空间 */
+.VPSidebar .link .text {
+  font-size: 13px !important;
+  line-height: 1.4em !important;
+}
+
+.VPSidebar .group {
+  margin-bottom: 0.75rem;
+}
+
+/* 侧边导航激活状态 */
 .VPDocAsideOutline .outline-marker {
   @apply w-1;
 }
