@@ -34,10 +34,15 @@
   @apply line-clamp-1;
 }
 
+/* 覆盖 h1：允许长标题自动换行，取消单行截断 */
 .vp-doc h1 {
   padding-bottom: 0.5rem;
   border-bottom: 4px solid var(--dora-border-indigo);
   width: fit-content;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.3em !important;
   @apply transition-all duration-300;
 }
 .vp-doc h1:hover {
