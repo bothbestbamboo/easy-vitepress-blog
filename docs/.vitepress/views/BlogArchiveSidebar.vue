@@ -39,6 +39,27 @@
       </div>
     </div>
 
+    <!-- 最新文章 (限制展示前10条，按时间从新到旧排序) -->
+    <div class="px-2 pb-3 mt-6 border-b-2 border-sky-400 dark:border-sky-700" v-if="latestPosts && latestPosts.length">
+      <h2
+        class="pb-2 text-2xl font-bold transition-all duration-300 border-b-4 border-sky-500 dark:border-sky-700 w-fit"
+      >
+        🔥 Latest Posts
+      </h2>
+      <div class="mt-3">
+        <div
+          @click="openLink(post.url)"
+          class="px-2 py-1.5 my-1 transition-all rounded-lg hover:cursor-pointer hover:bg-sky-200/80 dark:hover:bg-sky-900/80"
+          v-for="post in latestPosts"
+          :key="post.url"
+        >
+          <p class="text-sm font-medium line-clamp-2 text-sky-700 dark:text-sky-300">
+            {{ post.frontmatter?.title }}
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- 随机一言 -->
     <div
       class="flex gap-2 py-2 mt-4 rounded-lg shadow-md bg-amber-100/80 dark:bg-amber-950/80"
@@ -51,23 +72,29 @@
       </div>
       <span class="self-end text-2xl">”</span>
     </div>
-    <!--TODO: 推荐阅读 -->
-    <!-- <div class="p-4 mt-6 bg-slate-200">
-    <div v-for="(post, index) in features" :key="index">
-      <p>{{ post.frontmatter.desc }}</p>
-    </div>
-  </div> -->
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from "vue";
+import { onMounted, reactive, computed } from "vue";
 import { type Category } from "../utils/types.js";
 import { useRouter } from "vitepress";
 
 const router = useRouter();
 const { types, features } = defineProps(["types", "features"]);
 const categories: Category[] = [...types];
+
+// 对所有文章按更新时间/发布时间降序排序，并截取前 10 条最新文章
+const latestPosts = computed(() => {
+  if (!features) return [];
+  return [...features]
+    .sort((a, b) => {
+      const timeA = new Date(a.frontmatter?.updateTime || a.frontmatter?.date || 0).getTime();
+      const timeB = new Date(b.frontmatter?.updateTime || b.frontmatter?.date || 0).getTime();
+      return timeB - timeA; // 降序：最新的在最前面
+    })
+    .slice(0, 10);
+});
 
 // 打开文章链接
 const openLink = (link: string | undefined) => link && router.go(link);
