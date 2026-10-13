@@ -4,10 +4,10 @@
   >
     <!-- 标题 -->
     <div class="relative flex justify-center mt-2 0">
-      <h1 class="text-5xl font-bold">{{ hero.title || "Blog" }}</h1>
+      <h1 class="text-5xl font-bold">{{ hero.title || "blog" }}</h1>
       <span
         class="absolute text-6xl tracking-wider text-transparent -translate-x-1/2 opacity-60 bottom-1/3 left-1/2 bg-gradient-to-b from-black/20 to-black/10 bg-clip-text dark:from-white/20 dark:to-white/10"
-        >{{ hero.title || "Blog" }}</span
+        >{{ hero.title || "blog" }}</span
       >
     </div>
 

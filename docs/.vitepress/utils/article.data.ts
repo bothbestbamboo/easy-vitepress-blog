@@ -6,9 +6,9 @@ declare const data: Post[];
 export { data };
 
 /**
- * 返回 src/Blog/ 目录下所有 md 文档信息
+ * 返回 src/blog/ 目录下所有 md 文档信息
  */
-export default createContentLoader("Blog/**/*.md", {
+export default createContentLoader("blog/**/*.md", {
   transform(rawData): Post[] {
     return rawData
       .map(({ url, frontmatter }) => ({

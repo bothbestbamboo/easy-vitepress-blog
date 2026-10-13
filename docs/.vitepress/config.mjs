@@ -37,7 +37,7 @@ export default defineConfig({
     },
     // 【文章页面左侧导航】
     sidebar: {
-      "/Blog/": getSidebar("/docs/src", "/blog/"),
+      "/blog/": getSidebar("/docs/src", "/blog/"),
     },
     // 文章内导航栏标题
     outlineTitle: "Table of Content",
