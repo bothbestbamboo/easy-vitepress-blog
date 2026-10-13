@@ -13,7 +13,7 @@ hero:
       link: /AboutMe.html
     - theme: alt
       text: Blog
-      link: /Blog/
+      link: /blog/
 
 features:
   # ------ 第一排：4个核心产品 ------

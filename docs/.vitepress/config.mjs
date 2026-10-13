@@ -25,7 +25,7 @@ export default defineConfig({
     nav: [
       { text: "🏠 Home", link: "index.md" },
       { text: "🌐 About", link: "/AboutMe.md" },
-      { text: "💭 Blog", link: "/Blog/index" },
+      { text: "💭 Blog", link: "/blog/index" },
       { text: "💎 Products", link: "Projects.md" },
     
     ],
@@ -37,7 +37,7 @@ export default defineConfig({
     },
     // 【文章页面左侧导航】
     sidebar: {
-      "/Blog/": getSidebar("/docs/src", "/Blog/"),
+      "/Blog/": getSidebar("/docs/src", "/blog/"),
     },
     // 文章内导航栏标题
     outlineTitle: "Table of Content",
