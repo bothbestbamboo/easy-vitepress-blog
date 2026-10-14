@@ -14,26 +14,25 @@
   --dora-bg-indigo: #1a2242;
 }
 
-/* 核心：放宽 VitePress 正文内容区域的宽度，缩减左右留白 */
-.VPDoc {
+/* 仅在【非首页】的文章详情页生效宽度调整，避免影响首页布局 */
+body:not(.is-home) .VPDoc {
   max-width: 100% !important;
 }
 
-.VPDoc .container {
+body:not(.is-home) .VPDoc .container {
   max-width: 100% !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
 
-/* 调整 VitePress 内部正文内容容器的最大宽度与边距 */
-.VPDoc .content-container {
-  max-width: 1200px !important; /* 可根据需要调大或调小此数值来控制正文总宽度 */
+body:not(.is-home) .VPDoc .content-container {
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-.vp-doc {
+body:not(.is-home) .vp-doc {
   max-width: 100% !important;
 }
 
