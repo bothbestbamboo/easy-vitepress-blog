@@ -14,15 +14,15 @@
   --dora-bg-indigo: #1a2242;
 }
 
-/* 精确控制文章正文宽度与左右留白（约 30px 边距） */
+/* 精确控制文章正文宽度与左右留白（约 10px 边距） */
 .VPDoc {
   max-width: 100% !important;
 }
 
 .VPDoc .container {
   max-width: 100% !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .VPDoc .content {
