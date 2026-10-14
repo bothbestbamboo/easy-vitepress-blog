@@ -14,19 +14,23 @@
   --dora-bg-indigo: #1a2242;
 }
 
-/* 精确控制文章正文宽度与左右留白（约 10px 边距） */
+/* 核心：放宽 VitePress 正文内容区域的宽度，缩减左右留白 */
 .VPDoc {
   max-width: 100% !important;
 }
 
 .VPDoc .container {
   max-width: 100% !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
-.VPDoc .content {
-  max-width: 100% !important;
+/* 调整 VitePress 内部正文内容容器的最大宽度与边距 */
+.VPDoc .content-container {
+  max-width: 1200px !important; /* 可根据需要调大或调小此数值来控制正文总宽度 */
+  margin: 0 auto !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .vp-doc {
