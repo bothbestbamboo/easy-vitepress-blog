@@ -4,8 +4,8 @@ import { getSidebar } from "./utils/getSidebar";
 
 export default defineConfig({
   // 标签上显示的网站标题
-  title: "Bothbest Bamboo Blog",
-  titleTemplate: "Blog",
+  title: "China Bamboo Flooring Supplier",
+  titleTemplate: "Bothbest",
   // 在标签上显示所的 logo
   head: [["link", { rel: "icon", href: "https://img.bambooflooring.net/file/1782802571919.png" }]],
 
