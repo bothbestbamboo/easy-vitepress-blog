@@ -14,34 +14,52 @@
   --dora-bg-indigo: #1a2242;
 }
 
-/* 仅在【非首页】的文章详情页生效宽度调整，避免影响首页布局 */
-body:not(.is-home) .VPDoc {
-  max-width: 100% !important;
-}
-
-body:not(.is-home) .VPDoc .container {
-  max-width: 100% !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-body:not(.is-home) .VPDoc .content-container {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-
-body:not(.is-home) .vp-doc {
-  max-width: 100% !important;
-}
-
 /* 文章背景 */
 .VPContent.has-sidebar {
   background-position: 50%;
   background-size: 20px 20px;
   background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.04) 3%, transparent 0),
     linear-gradient(1turn, rgba(60, 10, 30, 0.04) 3%, transparent 0);
+}
+
+/* ===== 放宽正文内容区域 ===== */
+/* 让正文容器占满可用宽度，左右各留约 2 个小方格（40px）的边距 */
+.VPDoc .container {
+  max-width: 100% !important;
+}
+
+.VPDoc .content {
+  max-width: 100% !important;
+}
+
+.VPDoc .content-container {
+  max-width: 100% !important;
+}
+
+/* 给正文区域左右各留约 2 个小方格（40px）的内边距 */
+.VPDoc .content-container > .main {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  max-width: 100% !important;
+}
+
+/* 大屏幕下让正文更宽，左右各留约 2 个小方格 */
+@media (min-width: 960px) {
+  .VPDoc .container {
+    max-width: calc(100% - 80px) !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPDoc .container {
+    max-width: calc(100% - 80px) !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPDoc.has-aside .content-container {
+    max-width: 100% !important;
+  }
 }
 
 /* 右侧正文大标题 (h1)：强制自动换行，取消单行截断和省略号 */
