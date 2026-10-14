@@ -38,21 +38,21 @@
 
 /* 给正文区域左右各留约 2 个小方格（40px）的内边距 */
 .VPDoc .content-container > .main {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
   max-width: 100% !important;
 }
 
 /* 大屏幕下让正文更宽，左右各留约 2 个小方格 */
 @media (min-width: 960px) {
   .VPDoc .container {
-    max-width: calc(100% - 80px) !important;
+    max-width: calc(100% - 20px) !important;
   }
 }
 
 @media (min-width: 1280px) {
   .VPDoc .container {
-    max-width: calc(100% - 80px) !important;
+    max-width: calc(100% - 20px) !important;
   }
 }
 
