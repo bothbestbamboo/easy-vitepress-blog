@@ -16,7 +16,8 @@ export default createContentLoader("blog/**/*.md", {
         frontmatter,
         date: formatDate(frontmatter.updateTime),
       }))
-      .filter((post) => /.html/.test(post.url) && !post.frontmatter.hidden)
+      // 修改这里：移除了对 .html 的依赖，只要不是 hidden 的文章都会被加载
+      .filter((post) => !post.frontmatter.hidden)
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
