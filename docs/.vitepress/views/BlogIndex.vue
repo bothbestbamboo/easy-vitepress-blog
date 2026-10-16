@@ -25,10 +25,10 @@ import { useData } from "vitepress";
 import BlogPart from "./BlogPart.vue";
 
 const { site } = useData();
-const sidebarData = site.value.themeConfig.sidebar["/blog/"];
 
-/** TODO:
- * 重写归档页面，参考官方文档 API：
- * https://skewb.gitee.io/vitepress/guide/data-loading.html#createcontentloader
- */
+// 动态获取 sidebar 中的所有分类数据，不再死板匹配 "/blog/" 键名
+const sidebarConfig = site.value.themeConfig.sidebar;
+const sidebarData = {
+  items: sidebarConfig ? Object.values(sidebarConfig)[0]?.items || [] : []
+};
 </script>
