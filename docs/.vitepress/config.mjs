@@ -17,6 +17,9 @@ export default defineConfig({
   // 【谨慎修改】：一旦修改将引起较多变动
   srcDir: "./src",
 
+  // 开启 Clean URLs，去除文章 URL 中的 .html 后缀
+  cleanUrls: true,
+
   // 主题自定义
   themeConfig: {
     // 网站左上角 logo
