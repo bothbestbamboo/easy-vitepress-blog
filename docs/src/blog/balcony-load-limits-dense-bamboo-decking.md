@@ -8,11 +8,12 @@ updateTime: "2026-10-13 06:20"
 
 # Balcony Load Limits for Dense Bamboo Decking: The Weight Factor Explained
 
+![dense bamboo decking](/assets/image/dense-bamboo-decking.jpg)
+
 Balcony load limits for dense bamboo decking come down to one practical question before any board is laid: can the structure carry the extra weight without strain? Strand-woven bamboo is a heavy, hard material, and a balcony is a cantilevered surface with far less margin than a ground-floor patio. Skip the weight check and a beautiful deck can push a slab or ledge past what it was built to hold.
 
 The good news is that the assessment is straightforward once you separate the kinds of load and weigh the build honestly. This piece walks through how limits are set, where dense bamboo sits on the scale, and the moves that keep a balcony deck both safe and good-looking.
 
-![dense bamboo decking](/assets/image/dense-bamboo-decking.jpg)
 
 ## Why balconies are treated differently from floors
 
