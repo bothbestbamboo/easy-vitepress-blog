@@ -51,9 +51,11 @@ const getTitle = (post: Post): string => {
   if (userTitle) return userTitle;
 
   const { url } = post;
-  const matches = url.match(/.*\/(.*.html)/);
-  let fileName = matches && matches[1].replace(".html", "");
-  // 如果匹配成功，返回匹配的部分作为标题，否则返回一个默认标题
+  // 适配 cleanUrls：直接从 URL 路径中提取最后一节作为文件名
+  const segments = url.split("/").filter(Boolean);
+  let fileName = segments[segments.length - 1] || "";
+  fileName = fileName.replace(".html", ""); // 兼容可能残留的 .html
+
   if (fileName) return fileName2Title[fileName] || fileName;
   return "Error Title";
 };
