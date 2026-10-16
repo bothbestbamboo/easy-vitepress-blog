@@ -25,11 +25,11 @@ export default defineConfig({
     // 网站左上角 logo
     logo: "https://img.bambooflooring.net/file/1782802571919.png",
     // 顶部导航栏
-    nav: [
-      { text: "🏠 Home", link: "/" },
-      { text: "🌐 About", link: "/AboutMe" },
+     nav: [
+      { text: "🏠 Home", link: "index.md" },
+      { text: "🌐 About", link: "/AboutMe.md" },
       { text: "💭 Blog", link: "/blog/index" },
-      { text: "💎 Products", link: "/Projects" },
+      { text: "💎 Products", link: "Projects.md" }, 
     
     ],
     // 顶部导航栏左侧的社交平台跳转
