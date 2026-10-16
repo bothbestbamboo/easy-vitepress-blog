@@ -16,8 +16,13 @@ export default createContentLoader("blog/**/*.md", {
         frontmatter,
         date: formatDate(frontmatter.updateTime),
       }))
-      // 修改这里：移除了对 .html 的依赖，只要不是 hidden 的文章都会被加载
-      .filter((post) => !post.frontmatter.hidden)
+      // 过滤掉隐藏文章，同时排除博客自身的索引页（如 /blog/ 或 /blog）
+      .filter((post) => {
+        if (post.frontmatter.hidden) return false;
+        const cleanUrl = post.url.replace(/\/$/, "");
+        if (cleanUrl.endsWith("/blog") || cleanUrl === "/blog") return false;
+        return true;
+      })
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
