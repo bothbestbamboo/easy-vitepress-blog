@@ -40,4 +40,3 @@ tags: ["Bamboo Flooring"]
 
 Need custom dimensions, bulk order pricing, or material test reports? Contact our manufacturing team today!
 
-👉 **[Contact Us for Wholesale Pricing](/contact)**
