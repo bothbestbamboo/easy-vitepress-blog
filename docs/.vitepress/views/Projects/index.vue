@@ -20,7 +20,7 @@
 import { VPTeamPage, VPTeamPageTitle } from "vitepress/theme";
 import ProjectCard from "./ProjectCard.vue";
 // 引入自动加载的动态产品数据
-import { data as productsData } from "../../.vitepress/utils/product.data.ts";
+import { data as productsData } from "../../utils/product.data.ts";
 </script>
 
 <style scoped>
