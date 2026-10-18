@@ -4,8 +4,8 @@
   >
     <p class="text-sm font-medium">{{ footer.copyright }}</p>
     <p class="text-sm font-medium">
-      bamboo supplier |
-      <a href="#">bamboo flooring factory since 2001</a>
+      bathtub supplier |
+      <a href="/">bathtub factory since 2001</a>
     </p>
   </footer>
 </template>
