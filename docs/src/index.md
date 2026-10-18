@@ -5,7 +5,7 @@ hero:
   text: "Global Leader in Premium Swim Spas, Hot Tubs & Bathtubs"
   tagline: "🌊 Designer Swim Spas, Luxury Hot Tubs, Outdoor Spas & Elegant Freestanding Bathtubs Since 2001"
   image:
-    src: /images/20140520.jpg
+    src: /assets/image/20140520.jpg
     alt: luxury swim spa and outdoor hydrotherapy
   actions:
     - theme: brand
