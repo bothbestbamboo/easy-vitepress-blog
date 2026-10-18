@@ -2,7 +2,7 @@
   <VPTeamPage>
     <VPTeamPageTitle>
       <template #title>🎯 Products ✨</template>
-      <template #lead>Explore our comprehensive range of high-quality bamboo flooring & products</template>
+      <template #lead>Explore our comprehensive range of high-quality spa & bathtub products</template>
     </VPTeamPageTitle>
     <div class="px-6 md:px-12 lg:px-16">
       <div class="ProjectsContent">

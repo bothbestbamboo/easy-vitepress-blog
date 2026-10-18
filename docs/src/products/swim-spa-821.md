@@ -75,4 +75,4 @@ Equipped with 63 high-pressure jets—including 5 dedicated counter-current swim
 
 Looking to import **Swim Spa 821** for your distribution network, retail showroom, or hospitality resort project? XC Spa provides direct factory pricing, flexible OEM/ODM customization, and reliable global container shipping.
 
-👉 **[Contact XC Spa Sales Team for Quotations & Technical Catalogs](/)**
+👉 **[Contact XC Spa Sales Team for Quotations & Technical Catalogs](/AboutMe#📞-partner-with-xc-spa-today)**
