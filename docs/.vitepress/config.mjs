@@ -4,14 +4,14 @@ import { getSidebar } from "./utils/getSidebar";
 
 export default defineConfig({
   // 标签上显示的网站标题
-  title: "China Bamboo Flooring Supplier",
-  titleTemplate: "Bothbest",
+  title: "China Bathtub Supplier",
+  titleTemplate: "XCSPA",
   // 在标签上显示所的 logo
   head: [["link", { rel: "icon", href: "https://img.bambooflooring.net/file/1782802571919.png" }]],
 
   // 网站描述，有利于被搜索引擎捕获
   description:
-    "Bothbest is a professional, FSC certified bamboo factory based in China, manufacturing and exporting high-quality bamboo flooring, outdoor decking, and plywood since 2001.",
+    "XC Spa — a premier ISO9001:2000 certified manufacturer of luxury swim spas, outdoor hot tubs, and freestanding bathtubs with advanced automated facilities.",
 
   // md 文件根目录
   // 【谨慎修改】：一旦修改将引起较多变动
@@ -28,14 +28,14 @@ export default defineConfig({
     nav: [
       { text: "🏠 Home", link: "/" },
       { text: "🌐 About", link: "/AboutMe" },
-      { text: "💭 Blog", link: "/blog/" },      // 修改这里：将 /blog/index 改为 /blog/
+      { text: "💭 Blog", link: "/blog/" },    
       { text: "💎 Products", link: "/Projects" },
     ],
     // 顶部导航栏左侧的社交平台跳转
     socialLinks: [{ icon: "github", link: "#" }],
     // 首页底部版权声明
     footer: {
-      copyright: "Copyright © 2026-present bothbest",
+      copyright: "Copyright © 2026-present XC SPA",
     },
     // 【文章页面左侧导航】
     sidebar: {
