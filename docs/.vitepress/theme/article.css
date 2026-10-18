@@ -1,192 +1,139 @@
-/* 调整文档与产品详情页面样式 - 高端工业 B2B 风格 */
+/* 恢复原本的经典靛蓝主题色调 */
 
 :root {
-  --b2b-primary: #16a34a;       /* 品牌竹绿色 */
-  --b2b-primary-dark: #15803d;  
-  --b2b-bg-light: #f8fafc;
-  --b2b-border-color: #e2e8f0;
+  --dora-text-indigo: #3a5ccc;
+  --dora-text-indigo-plus: #3451b2;
+  --dora-border-indigo: #3e63dd;
+  --dora-bg-indigo: #f0f4ff;
 }
-
 .dark {
-  --b2b-primary: #22c55e;
-  --b2b-primary-dark: #16a34a;
-  --b2b-bg-light: #1e293b;
-  --b2b-border-color: #334155;
+  --dora-text-indigo: #99a2ff;
+  --dora-text-indigo-plus: #dddffe;
+  --dora-border-indigo: #99a2ff;
+  --dora-bg-indigo: #1a2242;
 }
 
-/* 1. 主标题 H1 优化：现代、无硬边框、高端感 */
+/* 文章背景 */
+.VPContent.has-sidebar {
+  background-position: 50%;
+  background-size: 20px 20px;
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.04) 3%, transparent 0),
+    linear-gradient(1turn, rgba(60, 10, 30, 0.04) 3%, transparent 0);
+}
+
+/* 右侧正文大标题 (h1)：强制自动换行，取消单行截断和省略号 */
 .vp-doc h1 {
-  font-size: 2.25rem !important;
-  font-weight: 800 !important;
-  color: #1e293b !important;
-  letter-spacing: -0.025em !important;
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 1rem !important;
-  width: 100% !important;
+  color: var(--dora-text-indigo);
+  letter-spacing: 0.1em;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--dora-border-indigo);
+  width: fit-content;
   white-space: normal !important;
   word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.3em !important;
+  display: block !important;
+  text-overflow: unset !important;
+  overflow: visible !important;
+  transition: all 0.3s;
+}
+.vp-doc h1:hover {
+  padding-right: 1.75rem;
 }
 
-.dark .vp-doc h1 {
-  color: #f8fafc !important;
-}
-
-/* 2. 二级、三级标题：增加左侧精致绿条装饰 */
 .vp-doc h2 {
-  position: relative !important;
-  padding-left: 0.85rem !important;
-  color: #0f172a !important;
-  font-weight: 700 !important;
-  margin-top: 2.5rem !important;
-  border-bottom: none !important;
-  width: 100% !important;
-}
-
-.dark .vp-doc h2 {
-  color: #f1f5f9 !important;
-}
-
-.vp-doc h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15%;
-  height: 70%;
-  width: 4px;
-  background-color: var(--b2b-primary);
-  border-radius: 2px;
+  color: var(--dora-text-indigo);
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  border-bottom: 3px solid var(--dora-border-indigo);
+  width: fit-content;
+  padding-bottom: 4px;
+  border-top: 0px solid var(--dora-border-indigo);
 }
 
 .vp-doc h3,
 .vp-doc h4,
 .vp-doc h5,
 .vp-doc h6 {
-  color: #334155 !important;
-  font-weight: 600 !important;
-  border-bottom: none !important;
+  color: var(--dora-text-indigo);
+  letter-spacing: 0.1em;
 }
 
-.dark .vp-doc h3,
-.dark .vp-doc h4 {
-  color: #cbd5e1 !important;
-}
-
-/* 3. 引用块 (Blockquote) 优化 */
+/* 引用 */
 .vp-doc blockquote {
-  margin: 1.5rem 0;
-  padding: 1.25rem 1.5rem;
-  background: var(--b2b-bg-light);
-  border-left: 4px solid var(--b2b-primary) !important;
-  border-radius: 0 8px 8px 0;
+  margin: 2em 0;
+  padding: 24px 32px;
+  background: var(--dora-bg-indigo);
+  border-left: 2px solid var(--dora-border-indigo);
   position: relative;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
 }
 
-.vp-doc blockquote::before,
+.vp-doc blockquote::before {
+  content: "❝";
+  top: 8px;
+  left: 8px;
+  color: var(--dora-text-indigo-plus);
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  position: absolute;
+  opacity: 0.7;
+}
+
 .vp-doc blockquote::after {
-  content: none !important; /* 移除旧的花哨引号 */
+  content: "❞";
+  font-size: 30px;
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  color: var(--dora-text-indigo-plus);
+  opacity: 0.7;
 }
 
 .vp-doc blockquote > p {
-  color: #475569 !important;
-  margin: 0 !important;
+  color: var(--dora-text-indigo-plus);
 }
 
-.dark .vp-doc blockquote > p {
-  color: #94a3b8 !important;
-}
-
-/* 4. 列表与标记 */
+/* 列表 */
 .vp-doc li::marker {
-  color: var(--b2b-primary);
+  color: var(--dora-text-indigo);
 }
 
-/* 5. 现代高级工业表格 (Tables) */
+/* 表格 */
 .vp-doc table {
-  display: table !important;
-  width: 100% !important;
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  border: 1px solid var(--b2b-border-color) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  margin: 1.5rem 0 !important;
-  font-size: 0.925rem !important;
-}
-
-.dark .vp-doc table {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  display: inline-block !important;
+  font-size: 12px;
+  width: auto;
+  max-width: 100%;
+  overflow: auto;
 }
 
 .vp-doc thead {
-  background: #f1f5f9 !important;
-  color: #1e293b !important;
+  background: var(--dora-bg-indigo);
+  color: var(--dora-text-indigo);
   text-align: left;
 }
 
-.dark .vp-doc thead {
-  background: #0f172a !important;
-  color: #f1f5f9 !important;
-}
-
-.vp-doc tr:nth-child(even) {
-  background: rgba(248, 250, 252, 0.6) !important;
-}
-
-.dark .vp-doc tr:nth-child(even) {
-  background: rgba(30, 41, 59, 0.4) !important;
+.vp-doc tr:nth-child(2n) {
+  background: var(--dora-bg-indigo);
 }
 
 .vp-doc th {
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  font-size: 0.8rem !important;
-  letter-spacing: 0.05em !important;
-  padding: 12px 16px !important;
-  border-bottom: 1px solid var(--b2b-border-color) !important;
-  border-right: none !important;
-  background: transparent !important;
+  color: var(--dora-text-indigo);
+  background: var(--dora-bg-indigo);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 12px 7px;
+  line-height: 24px;
 }
 
 .vp-doc td {
-  padding: 12px 16px !important;
-  border-bottom: 1px solid var(--b2b-border-color) !important;
-  border-right: none !important;
-  color: #475569 !important;
-  min-width: auto !important;
+  min-width: 120px;
 }
 
-.dark .vp-doc td {
-  color: #94a3b8 !important;
-}
-
-.vp-doc tr:last-child td {
-  border-bottom: none !important;
-}
-
-/* 6. 图片排版精修：立体圆角投影 */
-.vp-doc img {
-  border-radius: 12px !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 1.5rem auto;
-}
-
-.dark .vp-doc img {
-  border-color: rgba(51, 65, 85, 0.8);
-}
-
-.vp-doc img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* 7. 侧边导航与页脚优化 */
+/* 侧边导航字体调小、行高优化，节省空间 */
 .VPSidebar .link .text {
   font-size: 13px !important;
   line-height: 1.4em !important;
@@ -196,14 +143,19 @@
   margin-bottom: 0.75rem;
 }
 
+/* 侧边导航激活状态 */
+.VPDocAsideOutline .outline-marker {
+  @apply w-1;
+}
 .VPDocAsideOutline .content .root li .active {
-  color: var(--b2b-primary) !important;
+  color: var(--dora-text-indigo);
 }
 
+/* 底部导航按钮 */
 .VPDocFooter .prev-next .pager-link {
   @apply bg-zinc-50/70 dark:bg-zinc-900;
 }
 
 .vp-doc hr {
-  border-color: var(--b2b-border-color);
+  border-color: var(--dora-border-indigo);
 }
